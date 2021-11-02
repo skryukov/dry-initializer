@@ -23,7 +23,7 @@ module Dry
           default: default,
           reader: reader,
           desc: desc
-        }.reject { |_, value| value.nil? }
+        }.compact
       end
 
       def name
