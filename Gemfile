@@ -27,8 +27,8 @@ group :benchmarks do
   gem "fast_attributes"
   gem "kwattr"
   gem "ruby-prof", platform: :mri
-  gem "value_struct"
   gem "values"
+  gem "value_struct"
   gem "virtus"
 end
 
