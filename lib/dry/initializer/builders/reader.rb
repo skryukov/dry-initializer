@@ -43,7 +43,7 @@ module Dry::Initializer::Builders
       [
         "def #{@target}",
         "  #{@ivar} unless Dry::Initializer::UNDEFINED == #{@ivar}",
-        'end'
+        "end"
       ]
     end
 

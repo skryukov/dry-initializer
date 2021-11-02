@@ -26,7 +26,7 @@ module Dry::Initializer
     end
 
     def name
-      @name ||= "#{(option ? 'option' : 'parameter')} '#{source}'"
+      @name ||= "#{option ? "option" : "parameter"} '#{source}'"
     end
     alias to_s    name
     alias to_str  name
@@ -41,10 +41,10 @@ module Dry::Initializer
     end
 
     def inch
-      @inch ||= (option ? '@option' : '@param ').tap do |text|
-        text << ' [Object]'
+      @inch ||= (option ? "@option" : "@param ").tap do |text|
+        text << " [Object]"
         text << (option ? " :#{source}" : " #{source}")
-        text << (optional ? ' (optional)' : ' (required)')
+        text << (optional ? " (optional)" : " (required)")
         text << " #{desc}" if desc
       end
     end
