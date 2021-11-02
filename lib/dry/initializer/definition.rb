@@ -24,7 +24,7 @@ module Dry::Initializer
     end
 
     def name
-      @name ||= (option ? 'option' : 'parameter') << " '#{source}'"
+      @name ||= "#{(option ? 'option' : 'parameter')} '#{source}'"
     end
     alias to_s    name
     alias to_str  name
