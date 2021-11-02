@@ -14,7 +14,7 @@ module Dry
         extend self
 
         def call(type: nil, wrap: 0, **options)
-          type, wrap = unwrap(type, 0)
+          type, wrap = unwrap(type, wrap)
 
           {type: type, wrap: wrap, **options}
         end

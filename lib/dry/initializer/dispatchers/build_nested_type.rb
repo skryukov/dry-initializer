@@ -22,7 +22,7 @@ module Dry
           type ||= build_nested_type(parent, target, block)
           {parent: parent, source: source, target: target, type: type, **options}
         end
-      # rubocop: enable Metrics/ParameterLists
+        # rubocop: enable Metrics/ParameterLists
 
         private
 
@@ -57,10 +57,15 @@ module Dry
           "::#{parent.name}::#{name.to_s.split("_").compact.map(&:capitalize).join}"
         end
 
+        # rubocop:disable Security/Eval
         def build_struct(klass_name, block)
-          eval "class #{klass_name} < Dry::Initializer::Struct; end"
+          eval <<-CODE, binding, __FILE__, __LINE__ + 1
+            # class "::Xyz::Foo::Bar" < Dry::Initializer::Struct; end
+            class #{klass_name} < Dry::Initializer::Struct; end
+          CODE
           const_get(klass_name).tap { |klass| klass.class_eval(&block) }
         end
+        # rubocop:enable Security/Eval
       end
     end
   end

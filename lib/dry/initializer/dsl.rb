@@ -13,7 +13,7 @@ module Dry
       #   If unassigned params and options should be treated different from nil
       # @return [Dry::Initializer]
       def [](undefined: true, **)
-        null = (undefined == false) ? nil : UNDEFINED
+        null = undefined == false ? nil : UNDEFINED
         Module.new.tap do |mod|
           mod.extend DSL
           mod.include self
@@ -31,16 +31,16 @@ module Dry
         config.mixin
       end
 
+      def self.extended(mod)
+        mod.instance_variable_set :@null, UNDEFINED
+      end
+
       private
 
       def extended(klass)
         config = Config.new(klass, null: null)
         klass.send :instance_variable_set, :@dry_initializer, config
         klass.include Mixin::Root
-      end
-
-      def self.extended(mod)
-        mod.instance_variable_set :@null, UNDEFINED
       end
     end
   end
