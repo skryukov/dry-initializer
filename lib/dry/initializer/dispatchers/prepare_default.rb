@@ -12,7 +12,7 @@ module Dry::Initializer::Dispatchers::PrepareDefault
     default = callable! default
     check_arity! default
 
-    { default: default, optional: (optional | default), **options }
+    {default: default, optional: (optional | default), **options}
   end
 
   private

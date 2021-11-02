@@ -7,7 +7,7 @@ module Dry::Initializer::Dispatchers::WrapType
   extend self
 
   def call(type: nil, wrap: 0, **options)
-    { type: wrapped_type(type, wrap), **options }
+    {type: wrapped_type(type, wrap), **options}
   end
 
   private

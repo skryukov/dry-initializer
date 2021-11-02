@@ -10,7 +10,7 @@ module Dry::Initializer::Dispatchers::CheckType
     check_if_callable! source, type
     check_arity! source, type, wrap
 
-    { source: source, type: type, wrap: wrap, **options }
+    {source: source, type: type, wrap: wrap, **options}
   end
 
   private

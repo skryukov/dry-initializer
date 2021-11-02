@@ -14,7 +14,7 @@ module Dry::Initializer::Dispatchers::PrepareReader
              else invalid_reader!(target, reader)
              end
 
-    { target: target, reader: reader, **options }
+    {target: target, reader: reader, **options}
   end
 
   private
