@@ -1,21 +1,25 @@
 # frozen_string_literal: true
 
-module Dry::Initializer::Mixin
-  # @private
-  module Local
-    attr_reader :klass
+module Dry
+  module Initializer
+    module Mixin
+      # @private
+      module Local
+        attr_reader :klass
 
-    def inspect
-      "Dry::Initializer::Mixin::Local[#{klass}]"
-    end
-    alias to_s   inspect
-    alias to_str inspect
+        def inspect
+          "Dry::Initializer::Mixin::Local[#{klass}]"
+        end
+        alias to_s   inspect
+        alias to_str inspect
 
-    private
+        private
 
-    def included(klass)
-      @klass = klass
-      super
+        def included(klass)
+          @klass = klass
+          super
+        end
+      end
     end
   end
 end

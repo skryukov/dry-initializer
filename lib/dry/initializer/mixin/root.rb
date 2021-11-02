@@ -1,13 +1,17 @@
 # frozen_string_literal: true
 
-module Dry::Initializer::Mixin
-  # @private
-  module Root
-    private
+module Dry
+  module Initializer
+    module Mixin
+      # @private
+      module Root
+        private
 
-    def initialize(*args)
-      __dry_initializer_initialize__(*args)
+        def initialize(*args)
+          __dry_initializer_initialize__(*args)
+        end
+        ruby2_keywords(:initialize) if respond_to?(:ruby2_keywords, true)
+      end
     end
-    ruby2_keywords(:initialize) if respond_to?(:ruby2_keywords, true)
   end
 end
