@@ -137,7 +137,6 @@ module Dry
         finalize
       end
 
-      # rubocop: disable Metrics/MethodLength
       def add_definition(option, name, type, block, **opts)
         opts = {
           parent: extended_class,
@@ -155,7 +154,6 @@ module Dry
         finalize
         mixin.class_eval definition.code
       end
-      # rubocop: enable Metrics/MethodLength
 
       def final_definitions
         parent_definitions = Hash(parent&.definitions&.dup)

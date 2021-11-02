@@ -44,7 +44,6 @@ module Dry
               option :foo, [->(a, b) { [a, b] }]
           MESSAGE
         end
-        # rubocop: enable Metrics/MethodLength
       end
     end
   end
