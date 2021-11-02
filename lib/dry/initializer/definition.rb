@@ -29,9 +29,9 @@ module Dry
       def name
         @name ||= "#{option ? "option" : "parameter"} '#{source}'"
       end
-      alias to_s    name
-      alias to_str  name
-      alias inspect name
+      alias_method :to_s, :name
+      alias_method :to_str, :name
+      alias_method :inspect, :name
 
       def ==(other)
         other.instance_of?(self.class) && (other.source == source)
