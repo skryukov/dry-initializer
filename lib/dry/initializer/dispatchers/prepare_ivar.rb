@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Prepares the variable name of a parameter or an option.
 #

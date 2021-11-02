@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Prepare nested data type from a block
 #

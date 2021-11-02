@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "default values" do
   before do
     class Test::Foo

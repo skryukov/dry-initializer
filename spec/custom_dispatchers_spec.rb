@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "custom dispatchers" do
   subject { Test::Foo.new "123" }
 

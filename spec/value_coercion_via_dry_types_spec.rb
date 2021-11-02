@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "dry-types"
 
 describe "value coercion via dry-types" do

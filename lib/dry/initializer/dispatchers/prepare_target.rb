@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Prepares the target name of a parameter or an option.
 #

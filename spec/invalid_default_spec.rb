@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "invalid default value assignment" do
   subject do
     class Test::Foo

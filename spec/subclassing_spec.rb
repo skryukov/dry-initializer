@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "subclassing" do
   before do
     class Test::Foo

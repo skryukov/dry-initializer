@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "coercion of nil" do
   before do
     class Test::Foo

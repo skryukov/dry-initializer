@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 namespace :profile do
   def profile(name, execution, &definition)
     require "dry-initializer"

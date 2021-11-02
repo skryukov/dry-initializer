@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "repetitive definitions" do
   subject { Test::Foo.new }
 

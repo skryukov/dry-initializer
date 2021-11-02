@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # The module is responsible for __normalizing__ arguments
 # of `.param` and `.option`.

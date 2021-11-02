@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "custom initializer" do
   before do
     class Test::Foo

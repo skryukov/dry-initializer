@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Checks whether an unwrapped type is valid
 #

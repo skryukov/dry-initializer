@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "optional value" do
   context "when has no default value" do
     before do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "definition" do
   shared_examples :initializer do |in_context|
     subject { Test::Foo.new(1, bar: 2) }

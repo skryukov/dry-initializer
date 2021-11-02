@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "nested type argument" do
   subject { Test::Xyz.new("bar" => { "baz" => 42 }) }
 

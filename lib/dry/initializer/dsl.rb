@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Dry::Initializer
   # Module-level DSL
   module DSL

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe Dry::Initializer, "dry_initializer.attributes" do
   subject { instance.class.dry_initializer.attributes(instance) }
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "reader" do
   shared_examples "it has no public attr_reader" do
     it "does not define a public attr_reader" do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "missed default values" do
   subject do
     class Test::Foo

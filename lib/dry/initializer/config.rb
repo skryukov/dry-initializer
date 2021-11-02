@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Dry::Initializer
   #
   # Gem-related configuration of some class

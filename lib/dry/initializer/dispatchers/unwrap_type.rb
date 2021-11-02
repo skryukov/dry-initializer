@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Looks at the `:type` option and counts how many nested arrays
 # it contains around either nil or a callable value.

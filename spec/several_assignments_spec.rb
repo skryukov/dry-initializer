@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "attribute with several assignments" do
   before do
     class Test::Foo

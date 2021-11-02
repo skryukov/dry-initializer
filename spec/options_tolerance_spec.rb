@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "options tolerance" do
   before do
     class Test::Foo

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # The nested structure that takes nested hashes with indifferent access
 #
